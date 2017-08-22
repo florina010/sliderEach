@@ -1,0 +1,94 @@
+body{
+   background-image:url(https://www.toptal.com/designers/subtlepatterns/patterns/pink%20dust.png);
+  .pager{
+    display: inline-block;
+    margin-left: 700px;
+    margin-top: 220px;
+    div{
+      margin-left: 50px;
+      float: left;
+      height: 20px;
+      width: 20px;
+      position: relative;
+      border: 2px solid black;
+      border-radius: 50%;
+      span{
+        float: left;
+        width: 17px;
+        height: 16px;
+        position: absolute;
+        background-color: white;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .listaMea{
+    margin-bottom: 60px;
+    li{
+      list-style-type: none;
+    }
+  }
+  .listaTa{
+    margin-bottom: 60px;
+    li{
+      list-style-type: none;
+    }
+  }
+}
+
+.ui-dialog-content{
+  overflow: visible;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  width: 100% !important;
+  height: 1260px !important;
+  margin-top: -480px;
+}
+
+.ui-dialog-titlebar {
+    display: none;
+}
+img{
+  width: 300px;
+  height: 150px;
+}
+.inactive{
+  display: none;
+}
+.left{
+  display: inline-block;
+  left: 95px;
+  width: 20%;
+  height: 200px;
+  position: absolute;
+  clip: rect(0px,400px,400px,0px);
+}
+.right{
+  display: inline-block;
+  left: 1445px;
+  width: 20%;
+  height: 200px;
+  position: absolute;
+  clip: rect(0px,400px,400px,0px);
+}
+.active{
+  display: inline-block !important;
+  left: 534px;
+  right: 100px;
+  position: absolute;
+  width: 41%;
+  height: 200px;
+}
+@keyframes animate {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
