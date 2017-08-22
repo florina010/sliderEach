@@ -6,7 +6,7 @@ $(document).ready ( function () {
     displayPrevNext : "true",
     infinitTransition : "false",
     slideEl: "div",
-    vertical : "false"
+    vertical : "true"
   });
 
   $(".listaTa").slider({
@@ -14,7 +14,7 @@ $(document).ready ( function () {
     transitionTime : "2s",
     displayPrevNext : "true",
     infinitTransition : "false",
-    slideEl: "li",
+    slideEl: "span",
     vertical : "true"
   });
 });

@@ -35,6 +35,11 @@ body{
     li{
       list-style-type: none;
     }
+    span{
+      position: relative;
+      display: block;
+      width: 100%;
+    }
   }
 }
 

@@ -8,7 +8,7 @@
         infinitTransition : "true",
         slideEl : "li"
     }, obj );
-    
+
     return this.each( function() {
       var sliderOb, slides , length, id = 0, infinite, spans, sliderObj;
 
@@ -82,11 +82,11 @@
       }
 
       function vertical () {
-        $(sliderOb.children().last()).css("display" , "table-caption " );
         if ( options["slideEl"] == "li" )
           $(sliderOb.children().last()).css("margin-left" , "-35px" );
         else
           $(sliderOb.children().last()).css("margin-left" , "0px" );
+
         $(slides).children().each( function () {
           if ($(this).attr("class") == 'left')
             $(this).css({"left" : "87px", "top" : "0px", "clip" : "rect(50px, 866px, 200px, 0px)", "width" : "41%" });
@@ -96,6 +96,7 @@
             $(this).css({"left" : "87px", "top" : "230px", "clip" : "auto"});
         });
           $(sliderOb).css({"position" : "relative", "bottom" : "20px", "right" : "0px", "left" : "0px", "height" : "10px", "margin-bottom" : "600px"});
+          $(sliderOb.children().last()).css("display" , "grid" );
       }
 
       function start () {
