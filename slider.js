@@ -43,6 +43,7 @@
 
       spans.each( function () {
         $(this).click( function () {
+          window.clearTimeout(infinite);
           $(this).css("background-color", "#000");
           spans.not($(this)).css("background-color", "#fff");
           id = parseInt($(this).attr('id'));
@@ -65,7 +66,7 @@
           }
         if (options['infinitTransition'] == 'false'){
           if ( id == length - 1 )
-            clearInterval(infinite);
+            window.clearTimeout(infinite);
         }
         for (var i = 0; i < length; i++) {
            if ( options['animate'] == "true" )
@@ -113,7 +114,7 @@
           if (options['vertical'] == "true")
             vertical();
           id++;
-        }, 1000);
+        }, 2000);
     };
 
     });
